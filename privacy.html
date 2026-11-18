@@ -11,7 +11,7 @@ a{color:var(--accent)}ul{padding-left:20px}.card{background:var(--wash);border-r
 footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--grey)}
 </style></head>
 <body><main><header><svg class="logo" viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1F5FD6"/><path d="M51.55,32.94 L44.09,68.03 C40.66,73.88 33.19,74.61 33.39,70.22 C33.59,65.84 40.33,65.11 44.09,68.03 M51.55,32.94 L62.52,32.94 C67.36,32.94 70.46,36.86 69.43,41.71 C68.40,46.55 63.63,50.48 58.79,50.48 L47.82,50.48 M47.82,50.48 L61.71,50.48 C66.56,50.48 69.65,54.41 68.62,59.26 C67.59,64.10 62.83,68.03 57.98,68.03 L44.09,68.03" fill="none" stroke="#fff" stroke-width="4.39" stroke-linecap="round" stroke-linejoin="round"/></svg><h1>Blue privacy policy</h1></header>
-<p>Last updated: 18 November 2026</p>
+<p>Last updated: 18 November 2026 (location added in version 1.1)</p>
 <p>Blue is a personal app made by an individual developer. It has no servers of its own: <strong>the developer never receives any of your data.</strong></p>
 
 <h2>What Blue reads</h2>
@@ -20,8 +20,18 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-si
 <li><strong>A contact you pick</strong>, if you choose one for "For whom". Android's contact picker shares only that contact's name; Blue cannot see your other contacts.</li>
 </ul>
 
+<h2>Location (optional, off by default)</h2>
+<p>If you turn on <strong>Save where I pay</strong> in Settings, Blue notes your phone's location when an SMS that looks like a payment arrives. To do this while Blue is closed, Android asks you to allow location "all the time" and to let Blue see incoming SMS.</p>
+<ul>
+<li>The location is attached only to that payment's entry and stored only on your phone.</li>
+<li>It is deleted if you mark the entry as "Not a transaction" or a duplicate, and if the SMS turns out not to be a payment. Unmatched locations are deleted after 3 days.</li>
+<li>To show an area name, Blue asks Android's built-in geocoder, which may look the coordinates up with Google. "View on map" opens Google Maps.</li>
+<li>Locations are included in your Drive backup and in Sheets exports, which only you can see.</li>
+<li>Turn the setting off, or remove Blue's location permission, at any time.</li>
+</ul>
+
 <h2>Where your data is kept</h2>
-<p>Entries, categories, starred messages and settings are stored only in Blue's private storage on your phone. Uninstalling Blue deletes them.</p>
+<p>Entries, nicknames, categories, starred messages, locations and settings are stored only in Blue's private storage on your phone. Uninstalling Blue deletes them.</p>
 
 <h2>Google Gemini (optional)</h2>
 <p>If you add your own Gemini API key, Blue sends the text of SMS its rules can't read, and of entries still waiting for review, to Google's Gemini API so it can fill in the amount, merchant and other details. Requests are made with your key and ask Google not to store them. Google's handling of that text is covered by the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>. Without a key, nothing is sent. Your key is stored encrypted on your phone and is never included in backups.</p>
