@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blue privacy policy</title><style>
+:root{--ink:#0E1726;--grey:#4B5563;--line:#ECEEF2;--accent:#1F5FD6;--bg:#fff;--wash:#F6F7F9}
+@media (prefers-color-scheme:dark){:root{--ink:#E8EBF0;--grey:#A3ABB8;--line:#232A35;--accent:#6E9BEF;--bg:#0E1117;--wash:#1A202B}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+main{max-width:680px;margin:0 auto;padding:40px 20px 64px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:28px}.logo{width:52px;height:52px}
+h1{font-size:28px;margin:0;line-height:1.2}h2{font-size:18px;margin:32px 0 6px}p,li{color:var(--grey)}strong{color:var(--ink)}
+a{color:var(--accent)}ul{padding-left:20px}.card{background:var(--wash);border-radius:16px;padding:18px 20px;margin:20px 0}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--grey)}
+</style></head>
+<body><main><header><svg class="logo" viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1F5FD6"/><path d="M51.55,32.94 L44.09,68.03 C40.66,73.88 33.19,74.61 33.39,70.22 C33.59,65.84 40.33,65.11 44.09,68.03 M51.55,32.94 L62.52,32.94 C67.36,32.94 70.46,36.86 69.43,41.71 C68.40,46.55 63.63,50.48 58.79,50.48 L47.82,50.48 M47.82,50.48 L61.71,50.48 C66.56,50.48 69.65,54.41 68.62,59.26 C67.59,64.10 62.83,68.03 57.98,68.03 L44.09,68.03" fill="none" stroke="#fff" stroke-width="4.39" stroke-linecap="round" stroke-linejoin="round"/></svg><h1>Blue privacy policy</h1></header>
+<p>Last updated: 18 November 2026</p>
+<p>Blue is a personal app made by an individual developer. It has no servers of its own: <strong>the developer never receives any of your data.</strong></p>
+
+<h2>What Blue reads</h2>
+<ul>
+<li><strong>Your SMS inbox</strong>, with your permission, to find bank and payment messages. Blue only reads SMS. It never sends, changes or deletes any.</li>
+<li><strong>A contact you pick</strong>, if you choose one for "For whom". Android's contact picker shares only that contact's name; Blue cannot see your other contacts.</li>
+</ul>
+
+<h2>Where your data is kept</h2>
+<p>Entries, categories, starred messages and settings are stored only in Blue's private storage on your phone. Uninstalling Blue deletes them.</p>
+
+<h2>Google Gemini (optional)</h2>
+<p>If you add your own Gemini API key, Blue sends the text of SMS its rules can't read, and of entries still waiting for review, to Google's Gemini API so it can fill in the amount, merchant and other details. Requests are made with your key and ask Google not to store them. Google's handling of that text is covered by the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>. Without a key, nothing is sent. Your key is stored encrypted on your phone and is never included in backups.</p>
+
+<h2>Google Drive and Sheets (optional)</h2>
+<p>If you sign in with Google, Blue asks for one permission: access to files it creates in your Drive (<code>drive.file</code>). With it Blue:</p>
+<ul>
+<li>saves and restores a backup file, "Blue backup.json", in your own Drive;</li>
+<li>creates spreadsheets when you choose "Export to Sheets".</li>
+</ul>
+<p>Blue cannot see or change any other file in your Drive. The backup contains your entries and settings but not your Gemini key. Data goes directly between your phone and Google; it never passes through the developer.</p>
+<p>Blue's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. This data is used only to provide the backup and export features you ask for, is never sold, never used for advertising, and never read by people.</p>
+
+<h2>What Blue does not do</h2>
+<ul><li>No analytics, tracking, ads or crash reporting.</li><li>No selling or sharing of data with anyone.</li><li>No account with the developer.</li></ul>
+
+<h2>Deleting your data</h2>
+<ul>
+<li>Uninstall Blue to delete everything on your phone.</li>
+<li>Delete "Blue backup.json" and any "Blue export" spreadsheets from your Google Drive.</li>
+<li>Remove Blue's Google access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+<h2>Contact</h2>
+<p>Questions or concerns: open an issue at <a href="https://github.com/apoorvanandcode/blue/issues">github.com/apoorvanandcode/blue/issues</a>.</p>
+<footer><a href="index.html">Blue</a> · <a href="privacy.html">Privacy policy</a> · <a href="https://github.com/apoorvanandcode/blue">Source code</a> · Questions: <a href="https://github.com/apoorvanandcode/blue/issues">GitHub issues</a></footer>
+</main></body></html>
