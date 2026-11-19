@@ -11,7 +11,7 @@ a{color:var(--accent)}ul{padding-left:20px}.card{background:var(--wash);border-r
 footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--grey)}
 </style></head>
 <body><main><header><svg class="logo" viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1F5FD6"/><path d="M51.55,32.94 L44.09,68.03 C40.66,73.88 33.19,74.61 33.39,70.22 C33.59,65.84 40.33,65.11 44.09,68.03 M51.55,32.94 L62.52,32.94 C67.36,32.94 70.46,36.86 69.43,41.71 C68.40,46.55 63.63,50.48 58.79,50.48 L47.82,50.48 M47.82,50.48 L61.71,50.48 C66.56,50.48 69.65,54.41 68.62,59.26 C67.59,64.10 62.83,68.03 57.98,68.03 L44.09,68.03" fill="none" stroke="#fff" stroke-width="4.39" stroke-linecap="round" stroke-linejoin="round"/></svg><h1>Blue privacy policy</h1></header>
-<p>Last updated: 18 November 2026 (location added in version 1.1)</p>
+<p>Last updated: 19 November 2026</p>
 <p>Blue is a personal app made by an individual developer. It has no servers of its own: <strong>the developer never receives any of your data.</strong></p>
 
 <h2>What Blue reads</h2>
@@ -34,7 +34,7 @@ footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-si
 <p>Entries, nicknames, categories, starred messages, locations and settings are stored only in Blue's private storage on your phone. Uninstalling Blue deletes them.</p>
 
 <h2>Google Gemini (optional)</h2>
-<p>If you add your own Gemini API key, Blue sends the text of SMS its rules can't read, and of entries still waiting for review, to Google's Gemini API so it can fill in the amount, merchant and other details. Requests are made with your key and ask Google not to store them. Google's handling of that text is covered by the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>. Without a key, nothing is sent. Your key is stored encrypted on your phone and is never included in backups.</p>
+<p>If you add your own Gemini API key, Blue sends SMS its rules can't read, and entries still waiting for review, to Google's Gemini API so it can fill in the amount, merchant and other details. Before sending, Blue disguises each SMS on your phone: every number (amounts, balances, account, card, reference and phone numbers), names of people and shops (apart from ordinary English words such as "coffee" within a shop name), UPI ids and links are replaced with made-up values, and your own name is always removed. Google sees the bank's wording, the date and the sender, but not your real details. Gemini's answer is turned back into the real values on your phone; the list of swaps never leaves it. One-time passwords and codes are never sent. Requests are made with your key and ask Google not to store them. Google's handling of that text is covered by the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>. Without a key, nothing is sent. Your key is stored encrypted on your phone and is never included in backups.</p>
 
 <h2>Google Drive and Sheets (optional)</h2>
 <p>If you sign in with Google, Blue asks for one permission: access to files it creates in your Drive (<code>drive.file</code>). With it Blue:</p>
